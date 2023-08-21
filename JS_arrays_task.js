@@ -17,7 +17,7 @@ console.log(stringToArray(str));// виводить [ 'для', 'довільн�
 
 const initialArray = [1, 4, 6, 6, 7, 5, 34, 5, 1000, 66, 1];
 function removeDuplicatesAndSort(arr) {
-    const unique = initialArray.filter((x, i) => initialArray.indexOf(x) === i);
+    const unique = arr.filter((x, i) => arr.indexOf(x) === i);
     const sorted = unique.sort((a, b) => a - b);
     return sorted;
 }
@@ -30,7 +30,7 @@ console.log(removeDuplicatesAndSort(initialArray)); // виводить [ 1, 4, 
 
 const initialArray2 = [2, 3, 6, 7, 9, 12];
 function arrayOfEvens(arr) {
-    const evenNumbers = initialArray2.filter((number) => number % 2 === 0);
+    const evenNumbers = arr.filter((number) => number % 2 === 0);
     return evenNumbers;
 }
 
